@@ -115,7 +115,10 @@ html, body{
 .hero h1{
     font-size:58px;
     font-weight:700;
-    letter-spacing:-1px;
+
+    background:linear-gradient(90deg,#3b6cff,#6f9cff);
+    -webkit-background-clip:text;
+    color:transparent;
 }
 
 .hero p{
@@ -250,6 +253,13 @@ li{
 box-shadow:
     0 10px 25px rgba(0,0,0,0.15),
     0 0 15px rgba(59,108,255,0.35);
+    animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%{transform:translateY(0);}
+50%{transform:translateY(-8px);}
+100%{transform:translateY(0);}
 }
 
 .profile-name{
@@ -295,8 +305,10 @@ a:hover{
 
 .card-1:hover,
 .card-2:hover{
-    transform:translateY(-4px) scale(1.02);
-    box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    transform:translateY(-6px) scale(1.02);
+    box-shadow:
+    0 20px 40px rgba(0,0,0,0.12),
+    0 0 20px rgba(59,108,255,0.25);
 }
 
 .card-2:hover{
@@ -406,4 +418,17 @@ margin:10px 0;
 
 }
 
+}
+
+
+
+.fade-in{
+opacity:0;
+transform:translateY(30px);
+transition:all 0.8s ease;
+}
+
+.fade-in.show{
+opacity:1;
+transform:translateY(0);
 }

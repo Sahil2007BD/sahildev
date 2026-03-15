@@ -28,3 +28,27 @@ if(toggle && nav){
 }
 
 });
+
+window.addEventListener("scroll",function(){
+const nav=document.querySelector(".navbar");
+
+if(window.scrollY>50){
+nav.style.background="rgba(255,255,255,0.6)";
+}else{
+nav.style.background="rgba(255,255,255,0.25)";
+}
+});
+
+
+const observer=new IntersectionObserver(entries=>{
+entries.forEach(entry=>{
+if(entry.isIntersecting){
+entry.target.classList.add("show");
+}
+});
+});
+
+document.querySelectorAll(".page-wrapper").forEach(el=>{
+el.classList.add("fade-in");
+observer.observe(el);
+});
