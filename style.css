@@ -171,6 +171,7 @@ width:100%;
     margin: auto;
     padding: 40px;
     gap: 40px;
+    margin-bottom:25px;
 }
 
 .page-wrapper{
@@ -179,15 +180,17 @@ width:100%;
     margin: auto;
     padding: 40px;
     gap: 40px;
-}
-.page-wrapper{
     background:white;
     border-radius:12px;
     box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    align-items:flex-start;
 }
 
 .side2 {
-    width: 40%;
+    width: 46%;
+}
+.side1 {
+    width:60%;
 }
 
 .wrapper {
@@ -351,7 +354,14 @@ margin-left:3px;
 }
 
 @media only screen and (max-width:900px){
-    .page-wrapper, .side1, .side2 {
-        width: 90%;
-    }
+
+.page-wrapper{
+    flex-direction: column;
+    padding:20px;
+}
+
+.side1, .side2{
+    width:100%;
+}
+
 }
