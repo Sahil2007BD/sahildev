@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .7px;
+}
+
+body{
+    background:#f5f6fa;
+}
+
+.page-wrapper{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+    gap: 40px;
+}
+
+.page-wrapper{
+    display: flex;
+    max-width: 1100px;
+    margin: auto;
+    padding: 40px;
+    gap: 40px;
+}
+.page-wrapper{
+    background:white;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.08);
+}
+
+.side2 {
+    width: 40%;
+}
+
+.wrapper {
+    margin-bottom: 15px;
+}
+
+h1{
+    font-size:24px;
+    margin-bottom:10px;
+    border-bottom:2px solid #eee;
+    padding-bottom:5px;
+}
+h2 {
+    font-size: 16px;
+}
+
+li {
+    list-style: none;
+}
+
+p {
+    line-height: 1.3em;
+    font-size: 13px;
+}
+
+.card-1 {
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.card-2{
+    background:#f1f1f1;
+    padding:12px;
+    border-radius:6px;
+    margin-bottom:10px;
+}
+.profile-pic{
+    width:220px;
+    height:220px;
+    border-radius:10px;
+    object-fit:cover;
+}
+
+a{
+    color:#2c2a2b;
+    text-decoration:none;
+    font-weight:500;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+.card-2{
+    background:#f1f1f1;
+    padding:12px;
+    border-radius:6px;
+    margin-bottom:10px;
+}
+.card-1, .card-2{
+    transition: 0.2s ease;
+}
+
+.card-1:hover, .card-2:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.card-2{
+    background:#f1f1f1;
+    padding:12px;
+    border-radius:6px;
+    margin-bottom:10px;
+    transition:0.2s;
+}
+
+.card-2:hover{
+    transform:translateY(-3px);
+    box-shadow:0 6px 15px rgba(0,0,0,0.1);
+}
+
+@media only screen and (max-width:900px){
+    .page-wrapper, .side1, .side2 {
+        width: 90%;
+    }
+}
