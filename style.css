@@ -1106,3 +1106,9 @@ box-shadow:
 0 0 10px rgba(59,108,255,0.6),
 0 0 20px rgba(59,108,255,0.4);
 }
+
+.g-recaptcha {
+    margin: 15px 0;
+    transform: scale(0.95);
+    transform-origin: left;
+}   
