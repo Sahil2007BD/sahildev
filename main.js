@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
                 // ---------------- DARK MODE ----------------
-                
+
                 const themeToggle = document.getElementById("theme-toggle");
                 if (localStorage.getItem("theme") === "dark") {
                     document.body.classList.add("dark");
@@ -64,7 +64,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 });
 
+
+
                 // ---------------- NAVBAR SCROLL EFFECT ----------------
+
                 const navbar = document.querySelector(".navbar");
                 window.addEventListener("scroll", () => {
                     if (!navbar) return;
@@ -79,7 +82,10 @@ document.addEventListener("DOMContentLoaded", () => {
                     }
                 });
 
+
+
                 // ---------------- SCROLL ANIMATION ----------------
+
                 const observer = new IntersectionObserver(entries => {
                     entries.forEach(entry => {
                         if (entry.isIntersecting) entry.target.classList.add("show");
@@ -89,8 +95,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     el.classList.add("fade-in");
                     observer.observe(el);
                 });
+                
+
+
 
                 // ---------------- PAGE TRANSITION ----------------
+
                 document.body.classList.add("fade-in");
                 document.querySelectorAll("a").forEach(link => {
                     link.addEventListener("click", function(e) {
@@ -103,7 +113,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
                 });
 
+
+
+
+
                 // ---------------- INTRO ANIMATION (20 MIN RULE) ----------------
+
                 const loader = document.getElementById("intro-loader");
                 const lastVisit = localStorage.getItem("introTime");
                 const now = Date.now();
@@ -122,7 +137,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     showPage();
                 }
 
+
+
+
                 // ---------------- MOUSE GLOW EFFECT ----------------
+
                 const glow = document.querySelector(".cursor-glow");
                 let mouseX = 0, mouseY = 0, glowX = 0, glowY = 0;
                 document.addEventListener("mousemove", e => {
@@ -139,7 +158,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
                 animateGlow();
 
+
+
+
+
                 // ---------------- CARD 3D HOVER EFFECT ----------------
+
                 const cards = document.querySelectorAll(".card-1, .card-2, .contact-card");
                 cards.forEach(card => {
                     card.addEventListener("mousemove", e => {
@@ -157,7 +181,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     });
                 });
 
+
+
+
+
                 // ---------------- PARTICLE BACKGROUND ----------------
+
                 const canvas = document.getElementById("particles");
                 if (canvas) {
                     const ctx = canvas.getContext("2d");
@@ -185,7 +214,15 @@ document.addEventListener("DOMContentLoaded", () => {
                     animateParticles();
                 }
 
+
+
+
+
+
+
+
             // ---------------- MATH CAPTCHA ----------------
+            
             let num1, num2, correctAnswer;
 
             function generateCaptcha(){
