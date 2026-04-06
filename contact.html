@@ -81,7 +81,10 @@
 
             </div>
 
-            <form class="contact-form" action="https://formspree.io/f/mzdjjgow" method="POST">
+           <form class="contact-form" id="contactForm" action="https://formspree.io/f/mzdjjgow" method="POST">
+
+            <!-- MESSAGE (TOP) -->
+            <p id="form-message" class="hidden"></p>
 
             <div class="input-group">
                 <input type="text" name="name" placeholder=" " required>
@@ -98,14 +101,15 @@
                 <label>Your Message</label>
             </div>
 
-            <button type="submit" id="sendBtn">Send Message</button>
-            
-            <div class="g-recaptcha" data-sitekey="6LegmacsAAAAAN5mr1G3XAMEk8p0xbHZZlJSYuVi"></div>
+            <!--  MATH CAPTCHA -->
+            <div class="math-captcha">
+                <p id="captcha-question"></p>
+                <input type="number" id="captcha-input" placeholder="Enter answer" required>
+            </div>
 
-            <p id="form-message" class="hidden">✅ Message sent successfully!</p>
+            <button type="submit">Send Message</button>
 
             </form>
-
 
             </div>
 

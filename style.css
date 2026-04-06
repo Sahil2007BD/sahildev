@@ -1112,3 +1112,19 @@ box-shadow:
     transform: scale(0.95);
     transform-origin: left;
 }   
+
+.math-captcha{
+margin: 10px 0;
+}
+
+.math-captcha p{
+font-weight: 500;
+margin-bottom: 5px;
+}
+
+.math-captcha input{
+width: 100%;
+padding: 10px;
+border-radius: 6px;
+border: 1px solid #ccc;
+}
